@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro — Matemáticas &amp; Ingeniería de Software</title>
+  <meta name="description" content="Portafolio personal de Alejandro: proyectos de software, matemática aplicada y contacto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">∑</span>
+      <div>
+        <p class="brand-name">Alejandro</p>
+        <p class="brand-role">Matemáticas · Ingeniería de Software</p>
+      </div>
+    </div>
+
+    <nav class="site-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <!-- Columna 1: navegación de contexto / índice -->
+    <aside class="col col-index" aria-label="Índice de la página">
+      <p class="col-label">00 · Índice</p>
+      <ol class="index-list">
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#stack">Stack técnico</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ol>
+      <p class="col-note">Última actualización: <time datetime="2026-08">Agosto 2026</time></p>
+    </aside>
+
+    <!-- Columna 2: contenido principal -->
+    <div class="col col-main">
+
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Portafolio personal</p>
+        <h1 id="hero-title">Construyo software con la misma pasión que tomar un café.</h1>
+        <p class="hero-lede">
+          Estudiante de matemáticas e ingeniería de software. Me interesa como el mundo que nos rodea,
+          logra abstraerse en el mundo digital donde todo es posible.
+          Ese punto donde razonamiento formal se convierten en lineas de código: estructuras de datos, diseño
+          orientado a objetos y modelado numérico.
+        </p>
+      </section>
+
+      <section id="proyectos" class="section" aria-labelledby="proyectos-title">
+        <p class="col-label">01 · Proyectos</p>
+        <h2 id="proyectos-title">Proyectos seleccionados</h2>
+
+        <article class="card">
+          <h3>Consesionario de Motocicletas</h3>
+          <p class="card-meta">Java · Cálculo numérico</p>
+          <p>
+            Herramienta de escritorio que simula el comportamiento tradicional de una pagina web para la venta
+            de vehiculos en Bogotá. Cuenta con vista funcionalidades al comprador asi como espacio al empleado.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Sistema de reservas — taller de programación</h3>
+          <p class="card-meta">Java · Principios SOLID</p>
+          <p>
+            Aplicación construida en el taller de programación, enfocada en un diseño
+            desacoplado que separa reglas de negocio, persistencia y presentación.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Explorador de concurrencia</h3>
+          <p class="card-meta">Java · Hilos y sincronización</p>
+          <p>
+            Conjunto de ejercicios sobre concurrencia en Java: productores-consumidores,
+            bloqueos y condiciones de carrera resueltas con primitivas de sincronización.
+          </p>
+        </article>
+      </section>
+
+      <section id="sobre-mi" class="section" aria-labelledby="sobre-mi-title">
+        <p class="col-label">02 · Perfil</p>
+        <h2 id="sobre-mi-title">Sobre mí</h2>
+        <p>
+          Curso actualmente cálculo multivariable, ecuaciones diferenciales, probabilidad y 
+          estadistica, programación avanzada orientada a Java
+          y un taller de programación aplicada. Me interesa especialmente cómo los
+          principios de diseño de software (SOLID, concurrencia, POO, patrones de diseño)
+          se apoyan en la misma disciplina que exige la matemática: definir bien el problema antes de
+          intentar resolverlo.
+        </p>
+      </section>
+
+      <section id="stack" class="section" aria-labelledby="stack-title">
+        <p class="col-label">03 · Stack</p>
+        <h2 id="stack-title">Stack técnico</h2>
+        <ul class="tag-list">
+          <li>Java</li>
+          <li>HTML5 &amp; CSS3</li>
+          <li>Git / GitHub</li>
+          <li>Cálculo numérico</li>
+          <li>Diseño orientado a objetos</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- Columna 3: contacto -->
+    <aside class="col col-contact" id="contacto" aria-labelledby="contacto-title">
+      <p class="col-label">04 · Contacto</p>
+      <h2 id="contacto-title">Escríbeme</h2>
+      <p class="contact-lede">
+        ¿Proyecto, colaboración o pregunta sobre alguno de mis trabajos? Completa el formulario
+        Y hablemos!.
+      </p>
+
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" autocomplete="off">
+        </div>
+
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </aside>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Alejandro. Construido con HTML5 semántico y CSS Flexbox.</p>
+    <ul class="footer-links">
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
